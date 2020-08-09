@@ -12,9 +12,18 @@ avi = Teacher.new
 avi.first_name = "Avi"
 avi.last_name = "Flombaum"
 
+jim = User.new
+jim.first_name = "Jim"
+jim.last_name = "Bo"
 
+##won't work, doesn't have access to learn from user class
+
+#puts jim.learn
+
+more_knowledge = avi.teach
 some_knowledge = avi.teach 
 
+steve.learn(more_knowledge)
 steve.learn(some_knowledge)
 
-puts "Steve just learned this important knowledge: '#{steve.knowledge.first}' from Avi"
+puts "Steve just learned this important knowledge: '#{steve.knowledge}' from Avi"
